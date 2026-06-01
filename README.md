@@ -1,73 +1,290 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/198e4da9-5762-4655-aa0b-cdb0b6f40a92
+#  Kwetu Hub
 
-## How can I edit this code?
+**Bridging Uganda's Youth to Opportunities**
 
-There are several ways of editing your application.
+Kwetu Hub is a digital platform designed to connect young people with opportunities that can transform their lives. The platform serves as a centralized ecosystem where youth can discover jobs, internships, grants, scholarships, mentorship programs, entrepreneurship support, training opportunities, and professional networks.
 
-**Use Lovable**
+Our mission is simple:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/198e4da9-5762-4655-aa0b-cdb0b6f40a92) and start prompting.
+> **No opportunity should go unnoticed, and no young person should be left behind.**
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+##  Problem
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Uganda has one of the youngest populations in the world, with over 78% of its citizens under the age of 30. Despite this demographic advantage, many young people struggle to access employment opportunities, entrepreneurship support, funding, mentorship, and skills development programs.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Information about these opportunities is often scattered across different websites, social media platforms, institutions, and government programs, making it difficult for youth to find and benefit from them.
 
-Follow these steps:
+Kwetu Hub addresses this challenge by creating a one-stop platform that brings opportunities, resources, and support systems together.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+##  Solution
 
-# Step 3: Install the necessary dependencies.
-npm i
+Kwetu Hub acts as a bridge between youth and opportunity providers by:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+* Aggregating opportunities from multiple sources
+* Connecting youth to mentors and professional networks
+* Supporting entrepreneurship and business growth
+* Linking job seekers to employers
+* Providing a marketplace for youth-led products and services
+* Tracking impact and engagement
+
+---
+
+##  Key Features
+
+###  Opportunity Discovery
+
+Access:
+
+* Jobs
+* Internships
+* Scholarships
+* Grants
+* Fellowships
+* Business competitions
+* Training programs
+
+###  Mentorship Network
+
+Connect with:
+
+* Industry experts
+* Entrepreneurs
+* Career coaches
+* Business mentors
+
+###  Entrepreneurship Booster
+
+Tools for:
+
+* Business idea validation
+* Business planning
+* Financial literacy
+* Startup support
+* Market access
+
+###  Employment Hub
+
+Employers can:
+
+* Post vacancies
+* Search talent
+* Engage young professionals
+
+### 🛒 Digital Marketplace
+
+Youth entrepreneurs can:
+
+* Showcase products
+* Offer services
+* Reach new customers
+
+###  Impact Dashboard
+
+Track:
+
+* User engagement
+* Opportunity uptake
+* Employment outcomes
+* Business growth
+* Mentorship participation
+
+---
+
+##  System Architecture
+
+```text
+                     +------------------+
+                     |  Web Application |
+                     +--------+---------+
+                              |
+                              |
+                     +--------v---------+
+                     |  Mobile App      |
+                     +--------+---------+
+                              |
+                              |
+                     HTTPS / API Calls
+                              |
+                              v
+                 +-------------------------+
+                 |    Backend API Server   |
+                 |  (Node.js / Express)    |
+                 +-----------+-------------+
+                             |
+           +-----------------+-----------------+
+           |                                   |
+           v                                   v
++---------------------+           +----------------------+
+| PostgreSQL Database |           | Notification Service |
++---------------------+           +----------------------+
+                                           |
+                                           |
+                     +---------------------+--------------------+
+                     |                      |                  |
+                     v                      v                  v
+                 Email                  SMS Alerts      Push Notifications
+```
+
+---
+
+##  Technology Stack
+
+### Frontend
+
+* React.js
+* Flutter
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* PostgreSQL
+
+### Authentication
+
+* JWT Authentication
+* OTP Verification
+
+### Cloud & Hosting
+
+* Vercel
+* AWS / Azure
+* Cloud Storage
+
+---
+
+## Security
+
+Kwetu Hub prioritizes data privacy and security through:
+
+* HTTPS encryption
+* Secure authentication
+* Password hashing
+* Role-based access control
+* Audit logging
+* Database encryption
+* Automated backups
+
+---
+
+## User Roles
+
+### Youth
+
+* Discover opportunities
+* Connect with mentors
+* Build professional profiles
+
+### Employers
+
+* Post jobs
+* Search talent
+* Manage applications
+
+### Mentors
+
+* Support youth development
+* Schedule mentoring sessions
+
+### Opportunity Providers
+
+* Publish grants, scholarships, and training opportunities
+
+### Administrators
+
+* Manage platform operations
+* Monitor impact metrics
+
+---
+
+##  Future Integrations
+
+* Government Youth Livelihood Programme (YLP)
+* Emyooga
+* Parish Development Model (PDM)
+* National Identification Systems
+* Learning Management Systems
+* Financial Service Providers
+
+---
+
+##  Sustainability Model
+
+Kwetu Hub will sustain operations through:
+
+* Government partnerships
+* NGO collaborations
+* Employer subscriptions
+* Premium organizational services
+* Sponsored programs
+* Strategic partnerships
+
+---
+
+##  Expected Impact
+
+* Increased access to opportunities
+* Reduced youth unemployment
+* Improved entrepreneurship outcomes
+* Stronger mentorship networks
+* Greater economic inclusion
+* Enhanced visibility of youth talent
+
+---
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/kwetu-hub.git
+cd kwetu-hub
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configure Environment Variables
+
+```env
+DATABASE_URL=
+JWT_SECRET=
+EMAIL_API_KEY=
+SMS_API_KEY=
+```
+
+### Run Development Server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+##  Vision
 
-**Use GitHub Codespaces**
+Kwetu Hub is building a future where every young person in Uganda can easily access opportunities, resources, and support systems needed to thrive.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Kwetu means "Our Home."**
 
-## What technologies are used for this project?
+And we believe every young person deserves a place where opportunity feels within reach.
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/198e4da9-5762-4655-aa0b-cdb0b6f40a92) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+### Built with ❤️ for Uganda's Youth
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
